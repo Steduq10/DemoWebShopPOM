@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import util.EmailGenerator;
 
 public class LoginPage extends BasePageActions {
@@ -42,6 +44,10 @@ public class LoginPage extends BasePageActions {
         pageFactoryInitElement(driver, this);
     }
 
+    public LoginPage(WebDriver driver) {
+        super(driver);
+    }
+
     public void loginForm(){
         try {
             scrollOn(email);
@@ -71,7 +77,10 @@ public class LoginPage extends BasePageActions {
             LOGGER.error("Error al loguearse");
         }
     }
-
+    public void loadHomePage(){
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.invisibilityOf(logInButton));
+    }
 
     public boolean isHomePageDisplayed(){
         return isDisplayed(homePage);

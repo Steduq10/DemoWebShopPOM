@@ -1141,3 +1141,251 @@ Session ID: ba0691929c342529937ca6ab85404e39
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
 [2022-12-26 16:12:44][INFO ] [ContactPage:91] enquiryRequired
 [2022-12-26 16:12:44][INFO ] [LoginSteps:82] Mensaje de campo requerido mostrado
+[2022-12-26 16:15:31][INFO ] [LoginSteps:25] Ingresó correctamente al área de Contact Us
+[2022-12-26 16:15:33][INFO ] [LoginSteps:38] Formulario diligenciado correctamente
+[2022-12-26 16:15:33][INFO ] [LoginSteps:52] Mensaje de confirmación esperado correcto
+[2022-12-26 16:15:41][INFO ] [LoginSteps:25] Ingresó correctamente al área de Contact Us
+[2022-12-26 16:15:42][INFO ] [LoginSteps:68] Formulario diligenciado con un campo vacio
+[2022-12-26 16:15:43][INFO ] [ContactPage:87] nameRequired
+[2022-12-26 16:15:49][WARN ] [BasePageActions:88] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[1]/div[2]/span/span"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RCPLA2L', ip: '192.168.1.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\steve\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa2a358fcf85bf24ea7d0a35ece89e50
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[1]/div[2]/span/span}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[1]/div[2]/span/span"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RCPLA2L', ip: '192.168.1.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\steve\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa2a358fcf85bf24ea7d0a35ece89e50
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[1]/div[2]/span/span}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at common.BasePageActions.isDisplayed(BasePageActions.java:86)
+	at pages.contactpage.ContactPage.isRequiredMessage(ContactPage.java:88)
+	at stepdefinitions.contact.ContactSteps.recibeUnMensajeDeQueDebeDiligenciarElCampoFaltanteParaPoderGenerarElPQRS(ContactSteps.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[2022-12-26 16:15:49][INFO ] [ContactPage:89] emailRequired
+[2022-12-26 16:15:54][WARN ] [BasePageActions:88] no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[2]/span/span"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RCPLA2L', ip: '192.168.1.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\steve\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa2a358fcf85bf24ea7d0a35ece89e50
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[2]/span/span}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[2]/span/span"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RCPLA2L', ip: '192.168.1.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\steve\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa2a358fcf85bf24ea7d0a35ece89e50
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[2]/div[2]/span/span}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at common.BasePageActions.isDisplayed(BasePageActions.java:86)
+	at pages.contactpage.ContactPage.isRequiredMessage(ContactPage.java:90)
+	at stepdefinitions.contact.ContactSteps.recibeUnMensajeDeQueDebeDiligenciarElCampoFaltanteParaPoderGenerarElPQRS(ContactSteps.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[2022-12-26 16:15:54][INFO ] [ContactPage:91] enquiryRequired
+[2022-12-26 16:15:54][INFO ] [LoginSteps:82] Mensaje de campo requerido mostrado
+[2022-12-26 16:16:04][INFO ] [LoginSteps:27] Usuario ingresó al área de login
+[2022-12-26 16:16:06][INFO ] [LoginSteps:40] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:16:06][INFO ] [LoginSteps:53] Dirigido al menú principal correctamente
+[2022-12-26 16:16:12][INFO ] [LoginSteps:27] Usuario ingresó al área de login
+[2022-12-26 16:16:14][INFO ] [LoginSteps:69] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:16:14][INFO ] [LoginSteps:82] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:16:24][INFO ] [RegisterSteps:27] Usuario ingresó al área de registro
+[2022-12-26 16:16:26][INFO ] [RegisterSteps:40] Usuario diligenció el formulario de registro correctamente
+[2022-12-26 16:16:26][INFO ] [RegisterSteps:57] Mensaje de confirmación de registro esperado correcto
+[2022-12-26 16:16:37][INFO ] [RegisterSteps:27] Usuario ingresó al área de registro
+[2022-12-26 16:16:38][INFO ] [RegisterSteps:72] Usuario diligenció el formulario de registro con una contraseña menor a 6 digitos
+[2022-12-26 16:16:39][INFO ] [RegisterSteps:85] Mensaje de corregir contraseña del registro esperado correcto
+[2022-12-26 16:30:37][INFO ] [LoginSteps:27] Usuario ingresó al área de login
+[2022-12-26 16:30:38][INFO ] [LoginSteps:40] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:30:38][INFO ] [LoginSteps:41] Explicit wait
+[2022-12-26 16:30:38][INFO ] [LoginSteps:55] Dirigido al menú principal correctamente
+[2022-12-26 16:30:44][INFO ] [LoginSteps:27] Usuario ingresó al área de login
+[2022-12-26 16:30:46][INFO ] [LoginSteps:71] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:30:46][INFO ] [LoginSteps:84] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:33:41][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:33:42][INFO ] [LoginSteps:41] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:33:42][INFO ] [LoginSteps:42] Explicit wait
+[2022-12-26 16:33:42][INFO ] [LoginSteps:55] Explicit wait
+[2022-12-26 16:33:52][ERROR] [LoginSteps:58] Error en la ejecución del test: Expected condition failed: waiting for invisibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input' (tried for 3 second(s) with 500 milliseconds interval)
+[2022-12-26 16:34:02][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:34:03][INFO ] [LoginSteps:85] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:34:03][INFO ] [LoginSteps:98] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:35:35][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:35:36][INFO ] [LoginSteps:41] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:35:47][ERROR] [LoginSteps:58] Error en la ejecución del test: Expected condition failed: waiting for invisibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input' (tried for 3 second(s) with 500 milliseconds interval)
+[2022-12-26 16:36:01][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:36:03][INFO ] [LoginSteps:85] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:36:03][INFO ] [LoginSteps:98] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:37:59][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:38:01][INFO ] [LoginSteps:41] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:38:01][ERROR] [LoginSteps:58] Error en la ejecución del test: null
+[2022-12-26 16:38:09][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:38:10][INFO ] [LoginSteps:85] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:38:10][INFO ] [LoginSteps:98] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:40:05][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:40:09][INFO ] [LoginSteps:41] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:40:10][ERROR] [LoginSteps:58] Error en la ejecución del test: null
+[2022-12-26 16:40:31][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:40:32][INFO ] [LoginSteps:85] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:40:32][INFO ] [LoginSteps:98] Se muestra el mensaje de login no exitoso
+[2022-12-26 16:42:39][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:42:41][INFO ] [LoginSteps:41] Usuario diligenció el formulario de login correctamente
+[2022-12-26 16:42:41][INFO ] [LoginSteps:55] Dirigido al menú principal correctamente
+[2022-12-26 16:42:47][INFO ] [LoginSteps:28] Usuario ingresó al área de login
+[2022-12-26 16:42:48][INFO ] [LoginSteps:71] Usuario diligenció el formulario de login con email y password no registrado o incorrecto
+[2022-12-26 16:42:48][INFO ] [LoginSteps:84] Se muestra el mensaje de login no exitoso
