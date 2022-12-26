@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import util.EmailGenerator;
 
 public class LoginPage extends BasePageActions {
 
@@ -28,10 +29,13 @@ public class LoginPage extends BasePageActions {
     @FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")
     private WebElement logInButton;
 
-
     @CacheLookup
     @FindBy(className = "topic-html-content-header")
     private WebElement homePage;
+
+    @CacheLookup
+    @FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[1]/div/span")
+    private WebElement incorrectLoginMessage;
 
     public LoginPage(WebDriver driver, int seconds) {
         super(driver, seconds);
@@ -51,10 +55,29 @@ public class LoginPage extends BasePageActions {
         }catch (Exception e){
             LOGGER.error("Error al loguearse");
         }
-
     }
+
+    public void loginFormWrong(){
+        try {
+            scrollOn(email);
+            typeOnTextField(email, EmailGenerator.generateEmail());
+            scrollOn(password);
+            typeOnTextField(password, "123456789");
+            scrollOn(rememberMe);
+            clickOnElement(rememberMe);
+            scrollOn(logInButton);
+            clickOnElement(logInButton);
+        }catch (Exception e){
+            LOGGER.error("Error al loguearse");
+        }
+    }
+
 
     public boolean isHomePageDisplayed(){
         return isDisplayed(homePage);
+    }
+
+    public String incorrectLoginMessage(){
+        return getTextFromElement(incorrectLoginMessage);
     }
 }

@@ -60,4 +60,33 @@ public class LoginSteps extends BaseTestPage {
 
         }
     }
+
+    @When("diligencie el formulario de login  con email y password no registrado o incorrecto")
+    public void diligencieElFormularioDeLoginConEmailYPasswordNoRegistradoOIncorrecto() {
+        try{
+            LoginPage loginPage = new LoginPage(driver,5);
+            loginPage.loginFormWrong();
+            LOGGER.info("Usuario diligenció el formulario de login con email y password no registrado o incorrecto");
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+        }
+    }
+
+    @Then("se muestra en pantalla un mensaje de que el login no fue exitoso")
+    public void seMuestraEnPantallaUnMensajeDeQueElLoginNoFueExitoso() {
+        try {
+            LoginPage loginPage = new LoginPage(driver,5);
+            Assertions.assertEquals("Login was unsuccessful. Please correct the errors and try again.", loginPage.incorrectLoginMessage());
+            LOGGER.info("Se muestra el mensaje de login no exitoso");
+            quitDriver();
+
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+
+        }
+    }
 }
