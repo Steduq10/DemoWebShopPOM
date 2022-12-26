@@ -56,6 +56,8 @@ public class RegisterPage extends BasePageActions {
 
     public void fillRegisterForm(){
         try{
+            scrollOn(genderMale);
+            clickOnElement(genderMale);
             scrollOn(firstName);
             typeOnTextField(firstName, "Steven");
             scrollOn(lastName);
@@ -72,5 +74,9 @@ public class RegisterPage extends BasePageActions {
             LOGGER.error("Error al registrar usuario");
         }
 
+    }
+
+    public String getTextRegistrationCompleted(){
+        return getTextFromElement(confirmRegistrationMessage);
     }
 }
