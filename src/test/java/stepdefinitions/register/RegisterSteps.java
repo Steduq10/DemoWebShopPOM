@@ -15,8 +15,8 @@ public class RegisterSteps extends BaseTestPage {
 
     private static final Logger LOGGER = Logger.getLogger(RegisterSteps.class);
 
-    @Given("a que el cliente ingreso a la opcion de registro")
-    public void aQueElClienteIngresoALaOpcionDeRegistro() {
+    @Given("a que el usuario ingreso a la opcion de registro")
+    public void aQueElUsuarioIngresoALaOpcionDeRegistro() {
         try{
             setUpLog4j2();
             setUpWebDriver();
