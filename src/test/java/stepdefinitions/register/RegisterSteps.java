@@ -1,5 +1,6 @@
 package stepdefinitions.register;
 
+import io.cucumber.java.an.E;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -54,6 +55,34 @@ public class RegisterSteps extends BaseTestPage {
             RegisterPage registerPage = new RegisterPage(driver, 5);
             Assertions.assertEquals("Your registration completed", registerPage.getTextRegistrationCompleted());
             LOGGER.info("Mensaje de confirmación de registro esperado correcto");
+            quitDriver();
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+        }
+    }
+
+    @When("diligencie el formulario de registro incorrectamente con una contraseña menor a {int} caracteres")
+    public void diligencieElFormularioDeRegistroIncorrectamenteConUnaContraseñaMenorACaracteres(int arg0) {
+        try{
+            RegisterPage registerPage = new RegisterPage(driver, 5);
+
+            registerPage.fillRegisterFormWrong();
+            LOGGER.info("Usuario diligenció el formulario de registro con una contraseña menor a 6 digitos");
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+        }
+    }
+
+    @Then("el usuario recibira un mensaje indicando que tiene que ingresar una contrasena valida")
+    public void elUsuarioRecibiraUnMensajeIndicandoQueTieneQueIngresarUnaContrasenaValida() {
+        try{
+            RegisterPage registerPage = new RegisterPage(driver, 5);
+            Assertions.assertEquals("The password should have at least 6 characters.", registerPage.getTextPasswordMessage());
+            LOGGER.info("Mensaje de corregir contraseña del registro esperado correcto");
             quitDriver();
         }catch (Exception e){
             LOGGER.error("Error en la ejecución del test: " + e.getMessage());

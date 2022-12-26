@@ -7,3 +7,9 @@ Feature: Registrar nuevo usuario
     Given a que el usuario ingreso a la opcion de registro
     When diligencie el formulario de registro correctamente
     Then el usuario recibira un mensaje de que su cuenta fue registrada correctamente
+
+
+  Scenario: Registro incorrecto del usuario
+    Given a que el usuario ingreso a la opcion de registro
+    When diligencie el formulario de registro incorrectamente con una contraseña menor a 6 caracteres
+    Then el usuario recibira un mensaje indicando que tiene que ingresar una contrasena valida
