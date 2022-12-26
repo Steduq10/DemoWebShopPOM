@@ -35,5 +35,6 @@ public class RegisterSteps extends BaseTestPage {
 
     @Then("el usuario recibirá un mensaje de que su cuenta fue registrada correctamente")
     public void elUsuarioRecibiráUnMensajeDeQueSuCuentaFueRegistradaCorrectamente() {
+        //Your registration completed
     }
 }

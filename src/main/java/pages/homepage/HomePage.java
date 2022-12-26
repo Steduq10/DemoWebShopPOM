@@ -16,11 +16,11 @@ public class HomePage extends BasePageActions {
     private WebElement registerButton;
 
     @CacheLookup
-    @FindBy(name = "login")
+    @FindBy(className = "ico-login")
     private WebElement loginButton;
 
     @CacheLookup
-    @FindBy(name = "contact")
+    @FindBy(xpath = "/html/body/div[4]/div[2]/div[1]/div[1]/ul/li[6]/a")
     private WebElement contactUsButton;
 
 
