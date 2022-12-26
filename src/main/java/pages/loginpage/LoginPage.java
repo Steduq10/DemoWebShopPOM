@@ -24,15 +24,21 @@ public class LoginPage extends BasePageActions {
     private WebElement rememberMe;
 
     @CacheLookup
-    @FindBy(xpath= "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")
+    //@FindBy(className = "button-1 login-button")
+    @FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")
     private WebElement logInButton;
+
+
+    @CacheLookup
+    @FindBy(className = "topic-html-content-header")
+    private WebElement homePage;
 
     public LoginPage(WebDriver driver, int seconds) {
         super(driver, seconds);
         pageFactoryInitElement(driver, this);
     }
 
-    private void loginForm(){
+    public void loginForm(){
         try {
             scrollOn(email);
             typeOnTextField(email, "stevenduque@mail.com");
@@ -46,5 +52,9 @@ public class LoginPage extends BasePageActions {
             LOGGER.error("Error al loguearse");
         }
 
+    }
+
+    public boolean isHomePageDisplayed(){
+        return isDisplayed(homePage);
     }
 }

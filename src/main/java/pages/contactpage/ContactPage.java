@@ -26,13 +26,18 @@ public class ContactPage extends BasePageActions {
     @FindBy(xpath= "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[3]/form/div[3]/input")
     private WebElement submitButton;
 
+    @CacheLookup
+    @FindBy(className= "result")
+    private WebElement enquiryConfirmationMessage;
+
+
 
     public ContactPage(WebDriver driver, int seconds) {
         super(driver, seconds);
         pageFactoryInitElement(driver, this);
     }
 
-    private void submitContactInfo(){
+    public void submitContactInfo(){
         try{
             scrollOn(name);
             typeOnTextField(name,"Steven Duque");
@@ -46,5 +51,9 @@ public class ContactPage extends BasePageActions {
             LOGGER.error("Error al llenar los campo de contacto");
         }
 
+    }
+
+    public String getTextConfirmationMessage(){
+        return getTextFromElement(enquiryConfirmationMessage);
     }
 }

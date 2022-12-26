@@ -23,6 +23,7 @@ public class RegisterSteps extends BaseTestPage {
             generalSetUp();
             HomePage homePage = new HomePage(driver,10);
             homePage.clickOnRegisterButton();
+            LOGGER.info("Usuario ingresó al área de registro");
         }catch (Exception e){
             LOGGER.error("Error en la ejecución del test: " + e.getMessage());
             Assertions.fail("Error en la ejecución del test: " + e.getMessage());
@@ -35,6 +36,7 @@ public class RegisterSteps extends BaseTestPage {
         try{
             RegisterPage registerPage = new RegisterPage(driver, 5);
             registerPage.fillRegisterForm();
+            LOGGER.info("Usuario diligenció el formulario de registro correctamente");
         }catch (Exception e){
             LOGGER.error("Error en la ejecución del test: " + e.getMessage());
             Assertions.fail("Error en la ejecución del test: " + e.getMessage());
@@ -51,6 +53,8 @@ public class RegisterSteps extends BaseTestPage {
         try{
             RegisterPage registerPage = new RegisterPage(driver, 5);
             Assertions.assertEquals("Your registration completed", registerPage.getTextRegistrationCompleted());
+            LOGGER.info("Mensaje de confirmación de registro esperado correcto");
+            quitDriver();
         }catch (Exception e){
             LOGGER.error("Error en la ejecución del test: " + e.getMessage());
             Assertions.fail("Error en la ejecución del test: " + e.getMessage());
