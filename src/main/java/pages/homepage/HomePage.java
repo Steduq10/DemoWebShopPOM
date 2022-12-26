@@ -30,14 +30,17 @@ public class HomePage extends BasePageActions {
     }
 
     public void clickOnLoginButton(){
+        scrollOn(loginButton);
         clickOnElement(loginButton);
     }
 
     public void clickOnRegisterButton(){
+        scrollOn(registerButton);
         clickOnElement(registerButton);
     }
 
     public void clickOnContactUsButton(){
+        scrollOn(contactUsButton);
         clickOnElement(contactUsButton);
     }
 }
