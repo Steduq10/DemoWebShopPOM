@@ -59,4 +59,34 @@ public class ContactSteps extends BaseTestPage {
 
         }
     }
+
+    @When("diligencie el formulario de contact dejando unos de los campos vacios")
+    public void diligencieElFormularioDeContactDejandoUnosDeLosCamposVacios() {
+        try{
+            ContactPage contactPage = new ContactPage(driver,5);
+            contactPage.submitContactInfoWithAnEmptyField();
+            LOGGER.info("Formulario diligenciado con un campo vacio");
+
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+        }
+    }
+
+    @Then("recibe un mensaje de que debe diligenciar el campo faltante para poder generar el P.Q.R.S")
+    public void recibeUnMensajeDeQueDebeDiligenciarElCampoFaltanteParaPoderGenerarElPQRS() {
+        try {
+            ContactPage contactPage = new ContactPage(driver,5);
+            Assertions.assertTrue(contactPage.isRequiredMessage());
+            LOGGER.info("Mensaje de campo requerido mostrado");
+            quitDriver();
+
+        }catch (Exception e){
+            LOGGER.error("Error en la ejecución del test: " + e.getMessage());
+            Assertions.fail("Error en la ejecución del test: " + e.getMessage());
+            quitDriver();
+
+        }
+    }
 }
